@@ -5,11 +5,20 @@
     --white: #FBFBFB;
     --blue: #112CFF;
     --shadow:rgba(50,50,93,.1),0 5px 15px rgba(0,0,0,.07);
+    --differentBlue: rgb(61, 110, 151);
+    --black: rgb(22,22,22);
+    --spec: rgb(137, 146, 221);
+    cursor: nw-resize;
+   
 }
+
 /* theme */
 h2{
     font-size: 1.5em;
 }
+
+a:hover {
+    color: #0FA0CE; }
 
 body { 
     background-color: var(--sky);
@@ -27,7 +36,10 @@ body {
     position: absolute;
     top: 32px;
 }
-
+.moveall{
+    position: absolute;
+    top:448px;
+}
 /* holes */
 .hole{
     position: absolute;
@@ -52,7 +64,8 @@ body {
 
 /* hole 1 */
 .ho1{
-
+    width: 861px; 
+    height: 350px;
     top: 544px;
     right: -70px;
     position: absolute
@@ -210,9 +223,12 @@ body {
 
 
 /* projects */
+
+
 .movebox{
     position: relative;
     top:880px;
+    opacity: 0%;
 }
 .projects{
     display:flex;
@@ -222,42 +238,120 @@ body {
 }
 
 .card {
-    z-index: 9;
-    fill: var(--white);
+    overflow: visible;
+    z-index: 900;
+    /* fill: var(--white);
     fill-opacity: 100%;
     box-shadow: -2px 2px 8px var(--shadow);
-    border-radius: 6px;
-    height: 324px;
+    border-radius: 50%;
+    height: 324px; */
+    font-size:1.5rem;
     right:0px;
-    padding:1.6em;
+    padding:1.6em 1.6em 1.6em 0;
     position: relative;
-  
+    cursor: auto;
+    pointer-events: auto;
+    /* -webkit-tap-highlight-color: rgba(0,0,0,0);
+    animation-iteration-count: infinite;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%; */
 }
+
+/* .card::after {
+    z-index: 1;
+    width: auto;
+    min-width: 160px;
+    height: auto;
+    min-height: 160px;
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    left: calc(22.5%);
+    top: calc(22.5%);
+    pointer-events: none;
+    border: 3.37px solid var(--button-circle);
+    -webkit-animation-duration: 5.1s;
+    animation-duration: 5.1s;
+    -webkit-animation-name: intervalCardBorder;
+    animation-name: intervalCardBorder;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+ */
+
+ .prince{
+     position: relative; 
+ }
+
+ .ptitle{
+     font-weight: 800;
+     font-size: 1.8em;
+ }
 
 /* typography */
-#hey{
-    color: var(--blue); 
+h3{
+    text-align:left;
 }
 
+#hey{
+    color: var(--blue); 
+    font-weight: 900;
+}
+span{
+    color: var(--blue);
+}
+
+.spec {
+    font-size: .6rem;
+    color: var(--spec);
+    text-transform: uppercase;
+    font-family: "ibm plex sans";
+    font-weight: 500;
+    margin-bottom: 12px;
+    margin-top: 48px;
+
+}
+
+
+
 /* spacing */
+
+@media(max-width:577px){
+    .Notorious{
+        max-width:88%;
+    }
+}
+@media (min-width:1132px){
+    .fireplace2{
+        width: 66%;
+    }
+}
 @media (max-width: 1131px) {
     .welcome{
       top: 922px;
       margin-bottom:24px;
       position: relative;
     }
-    .seven.columns{
-        width: 88.6666666667%; }
-    }
-    
 
+
+}
+.space{
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
 
     .welcome2{margin-bottom: 4px;}
     
     .ptl{
             font-weight: 700;
-            font-size: 1.7em;
-        margin-top: 48px;
+            font-size: 1.5em;
+
     }
     @media (min-width: 750px) {
         .container {
@@ -266,6 +360,8 @@ body {
         .ptl{
             margin-top: 1.6em;
             font-size: 1em;
+            margin-bottom: 1.6em;
+            clear: both;
     }
 }
     @media (max-width: 750px) {
@@ -360,7 +456,7 @@ main {
 	justify-content: center;
 	align-items: center;
 	min-height: 100vh;
-	margin: 0 auto;
+	margin: 0;
 	pointer-events: none;
 }
 
@@ -430,31 +526,59 @@ main {
 	}
 }
 
-.card {
 
-	cursor: pointer;
-	pointer-events: auto;
-	-webkit-tap-highlight-color: rgba(0,0,0,0);
+/* footer */
+.foot{
+    position: absolute;
+ clear: both;
+ right: 0%;
+ top:1212px;
+ max-width: 110px;;
 }
 
-.card::after {
-    z-index: 1;
-	width: 64px;
-	height: 64px;
-	box-sizing: border-box;
-	content: '';
-	display: block;
-	position: absolute;
-	top: 0;
-	left: 0;
-	pointer-events: none;
-	border: 3.37px solid var(--button-circle);
-	border-radius: 50%;
-	-webkit-animation-duration: 5.1s;
-	animation-duration: 5.1s;
-	-webkit-animation-name: intervalCardBorder;
-	animation-name: intervalCardBorder;
-	-webkit-animation-iteration-count: infinite;
-	animation-iteration-count: infinite;
+@media(min-width:749px){
+    .foot{
+    position: absolute;
+     clear: both;
+     right: 0%;
+     top:1100px;;
+     max-width: 110px;;
+    }
+
 }
 
+@media(max-width:374px){
+    .foot{
+        position: absolute;
+         clear: both;
+         left: 8.33333%;
+         top:1200px;
+         max-width: 110px;
+    }
+    span.mail{
+        color: #e83779;
+    background-color: #112CFF;
+    padding: 2px 6px;
+    border-radius: 6px;;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+        }
+    .movebox{
+        top:975;
+    }
+     
+}
+
+span.mail{
+    margin-left: -6px;
+    background-color: #112CFF;
+    color: #FFF;
+    padding: 2px 6px;
+    border-radius: 6px;;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}

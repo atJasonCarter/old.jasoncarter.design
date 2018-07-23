@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="274" height="40" viewBox="0 0 274 40">
+  <defs>
+    <circle id="nomoni-b" cx="16" cy="16" r="16"/>
+    <filter id="nomoni-a" width="143.8%" height="143.8%" x="-21.9%" y="-15.6%" filterUnits="objectBoundingBox">
+      <feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="2"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.177055027 0"/>
+    </filter>
+  </defs>
+  <g fill="none" fill-rule="evenodd" transform="translate(4 2)">
+    <use fill="#000" filter="url(#nomoni-a)" xlink:href="#nomoni-b"/>
+    <use fill="#FFF" xlink:href="#nomoni-b"/>
+    <text fill="#A1AEBF" font-family="AppleColorEmoji, Apple Color Emoji" font-size="13" letter-spacing="1.147">
+      <tspan x="8" y="21">⚠️</tspan>
+    </text>
+    <text fill="#E2001C" font-family="AndaleMono, Andale Mono" font-size="12" letter-spacing="1">
+      <tspan x="42" y="18">Illustration budget exceede</tspan> <tspan x="263.432" y="18">d</tspan>
+    </text>
+  </g>
+</svg>
