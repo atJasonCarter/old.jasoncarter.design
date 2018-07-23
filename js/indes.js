@@ -8,6 +8,83 @@ var lineDrawing = anime({
   loop: false
 });
 
+//OPTIONAL ANIMATION SEQUENCE//
+//
+//
+
+// $(document).ready(function(){
+//   $(".body2, .line2").hide();
+//   var CSStransforms = anime({
+//     targets: '.body2',
+//     scaleY: 0.0001,
+//     translateY: 114,
+//   });
+  
+// var human = document.getElementById('ho2');
+// human.onclick = function(){
+
+//   $(".body2, .line2").show();
+
+  
+//   var keyframes = anime({
+//     targets: '.body2',
+//   translateX: [
+//     { value: -42, duration: 200, delay: 0, elasticity: 1, easing: 'easeOutExpo' },
+//     { value: 35, duration: 120, delay: 0, elasticity: 1, easing: 'easeOutExpo' },
+//     { value: 182.12, duration:675, delay:0, elasticity:1, easing: 'easeOutExpo'},
+//     { value: 0, duration:60, delay:0, elasticity:1, easing: 'easeOutExpo'},
+//     { value: 182.12, duration:675, delay:2000, elasticity:1, easing: 'easeOutExpo'},
+//     { value: 35, duration: 120, delay: 0, elasticity: 1, easing: 'easeOutExpo' },
+//     { value: -42, duration: 200, delay: 0, elasticity: 1, easing: 'easeOutExpo' },
+//   ],
+//   translateY: [
+//     { value: 114, duration: 200, delay: 0, elasticity: 1, easing: 'easeOutExpo' },
+//     { value: -3.11, duration: 120, delay: 0, elasticity: 1, easing: 'easeOutExpo' },
+//     { value: -83, duration:675, delay:0, elasticity:1, easing: 'easeOutExpo'},
+//     { value: 0, duration:60, delay:0, elasticity:1, easing: 'easeOutExpo'},
+//     { value: -83, duration:675, delay:2000, elasticity:1, easing: 'easeOutExpo'},
+//     { value: -3.11, duration: 120, delay: 0, elasticity: 1, easing: 'easeOutExpo' },
+//     { value: 114, duration: 200, delay: 0, elasticity: 1, easing: 'easeOutExpo' },
+//   ],
+//   skewX: [
+//     { value: 0, duration: 200, delay: 0, elasticity: 1 },
+//     { value: -23, duration: 120, delay: 0, elasticity: 1 },
+//     { value: -38.37, duration:675, delay:0, elasticity:1},
+//     { value: 0, duration:60, delay:0, elasticity:1},
+//     { value: -38.37, duration:675, delay:2000, elasticity:1},
+//     { value: -23, duration: 120, delay: 0, elasticity: 1 },
+//     { value: 0, duration: 200, delay: 0, elasticity: 1 },
+//   ],
+//   scaleY:[
+//     { value: 0.003, duration: 200, delay: 0, elasticity: 1, easing: 'easeOutExpo' },
+//     { value: 1.07, duration: 120, delay: 0, elasticity: 1 , easing: 'easeOutExpo'},
+//     { value: 1.75, duration:675, delay:0, elasticity:1, easing: 'easeOutExpo'},
+//     { value: 1, duration:60, delay:0, elasticity:1, easing: 'easeOutExpo'},
+//     { value: 1.75, duration:675, delay:2000, elasticity:1, easing: 'easeOutExpo'},
+//     { value: 1.07, duration: 120, delay: 0, elasticity: 1 , easing: 'easeOutExpo'},
+//     { value: 0.003, duration: 200, delay: 0, elasticity: 1, easing: 'easeOutExpo' },
+//   ],
+//   scaleX:[
+//     { value: .47, duration: 200, delay: 0, elasticity: 1, easing: 'easeOutExpo' },
+//     { value: .81, duration: 120, delay: 0, elasticity: 1, easing: 'easeOutExpo' },
+//     { value: 1.41, duration:675, delay:0, elasticity:1, easing: 'easeOutExpo'},
+//     { value: 1, duration:60, delay:0, elasticity:1, easing: 'easeOutExpo'},
+//     { value: 1.41, duration:675, delay: 2000, elasticity:1, easing: 'easeOutExpo'},
+//     { value: .81, duration: 120, delay: 0, elasticity: 1, easing: 'easeOutExpo' },
+//     { value: .47, duration: 200, delay: 0, elasticity: 1, easing: 'easeOutExpo' },
+//   ]
+
+// });
+// var keyframes = anime({
+//   targets: '.line2',
+// opacity: [{value: 1, delay: 1155}, {value: 0, delay: 1400}]
+// });
+// };
+// });
+
+
+
+
 // hide hole2
 $(document).ready(function(){
   $(".body2, .line2").hide();
@@ -64,7 +141,7 @@ $(document).ready(function(){
     });
 
 
-var holeShow = document.querySelector('');
+var holeShow = document.querySelector('holeShow');
 
 function animatefig(scale, duration, elasticity) {
   anime.remove(holeShow);
@@ -75,6 +152,9 @@ function animatefig(scale, duration, elasticity) {
     elasticity: elasticity
   });
 }
+
+
+// Matrix efx
 
 
 

@@ -2,7 +2,7 @@ class ShapeOverlays {
   constructor(elm) {
     this.elm = elm;
     this.path = elm.querySelectorAll('path');
-    this.numPoints = 6;
+    this.numPoints = 10;
     this.duration = 900;
     this.delayPointsArray = [];
     this.delayPointsMax = 300;
@@ -50,7 +50,6 @@ class ShapeOverlays {
     str += (this.isOpened) ? `V 100 H 0` : `V 0 H 0`;
     return str;
   }
-
   render() {
     if (this.isOpened) {
       for (var i = 0; i < this.path.length; i++) {
@@ -75,25 +74,11 @@ class ShapeOverlays {
   }
 }
 
-
 (function() {
-  const elmcard = document.querySelector('.movebox');
+  const elmcard = document.querySelector('.card');
+  const gNavItems = document.querySelectorAll('.global-menu__item');
   const elmOverlay = document.querySelector('.shape-overlays');
   const overlay = new ShapeOverlays(elmOverlay);
-  // var href = $(this).attr('href');
-
- $('.card').click( function(event) {
-
-	event.preventDefault();
-	var href = $(this).attr('href');
-
-	setTimeout( function() {
-		window.location = href;
-	}, 2300);
-});
-
-
-
 
   elmcard.addEventListener('click', () => {
     if (overlay.isAnimating) {
@@ -102,18 +87,14 @@ class ShapeOverlays {
     overlay.toggle();
     if (overlay.isOpened === true) {
       elmcard.classList.add('is-opened-navi');
-
-    if (overlay.isAnimating == false) { 
-      setTimeout( function(URL) { window.location = href;  }, 2500 );
-    }
-
-
+      for (var i = 0; i < gNavItems.length; i++) {
+        gNavItems[i].classList.add('is-opened');
+      }
+    } else {
+      elmcard.classList.remove('is-opened-navi');
+      for (var i = 0; i < gNavItems.length; i++) {
+        gNavItems[i].classList.remove('is-opened');
+      }
     }
   });
 }());
-
-
-
-
-
-
