@@ -387,8 +387,52 @@ span{
     }
 
     .princeDiv{
-        width: 100vw;
-        background-color: #fff;
+        width: 75vw;
+        height:120px;
+        position: relative;
+    }
+    .wiggle{
+  animation: wiggle 10s linear infinite running;
+  transform: rotate(90deg);
+  -webkit-animation: wiggle 10s linear infinite running;
+}
+
+@keyframes wiggle {
+ 0%{
+    
+    stroke: #5d93d8;
+
+
+
+
+}
+  25% {
+    
+    stroke: #112CFF;
+  }
+  50%{
+    
+    stroke: #e83779;
+
+
+
+
+}
+  75%{
+    
+    stroke: #112CFF;
+    
+
+
+}
+  100%{
+    
+    stroke: #5d93d8;
+
+
+
+
+}
     }
 /* ========================================================================== */
 /* Page Animation */
@@ -578,18 +622,13 @@ main {
      top:1100px;;
      max-width: 110px;;
     }
-
 } */
 
 
-@media(max-width:374px){
-    /* .foot{
-        position: absolute;
-         clear: both;
-         left: 8.33333%;
-         top:1200px;
-         max-width: 110px;
-    } */
+@media(max-width:376px){
+    .foot{
+font-size: .9em;
+    }
     span.mail{
         color: #e83779;
     background-color: #112CFF;
