@@ -627,7 +627,7 @@ main {
 
 @media(max-width:376px){
     .foot{
-font-size: .9em;
+font-size: .4em;
     }
     span.mail{
         color: #e83779;
