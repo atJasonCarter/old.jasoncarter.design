@@ -8,6 +8,18 @@ var lineDrawing = anime({
   loop: false
 });
 
+//footer
+$(document).scroll(function() {
+  var y = $(this).scrollTop();
+  if (y > 400) {
+    $(".foot").show();
+  } else {
+    $(".foot").hide();
+  }
+});
+
+
+
 // hide hole2
 $(document).ready(function(){
   $(".body2, .line2").hide();
