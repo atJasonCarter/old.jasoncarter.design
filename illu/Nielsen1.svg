@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="447" height="251" viewBox="0 0 447 251">
+  <defs>
+    <rect id="nielsen1-a" width="447" height="252"/>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <mask id="nielsen1-b" fill="#fff">
+      <use xlink:href="#nielsen1-a"/>
+    </mask>
+    <use fill="#FFF" fill-rule="nonzero" xlink:href="#nielsen1-a"/>
+    <text fill="#354052" font-family="OpenSans-Regular, Open Sans" font-size="12" mask="url(#nielsen1-b)">
+      <tspan x="14" y="228">Nielsen’s toolkit for Developers</tspan>
+    </text>
+    <text fill="#354052" font-family="OpenSans-Regular, Open Sans" font-size="20" mask="url(#nielsen1-b)">
+      <tspan x="14" y="43">Developer Studio</tspan>
+    </text>
+    <g mask="url(#nielsen1-b)">
+      <g transform="translate(208 -32)">
+        <path fill="#EDF8FF" d="M223.376944,52.8510449 C139.914117,17.0934826 51.9918502,-38.5379619 8.23403479,39.5069878 C-35.5237806,117.551937 109.37621,82.6431704 109.37621,181.574048 C109.37621,280.504926 295.479918,280.33782 295.479918,191.515865 C295.479918,102.693909 306.839771,88.6086072 223.376944,52.8510449 Z"/>
+        <path fill="#97D8FF" d="M226.070786,69.4044392 C156.294493,32.5379022 62.7828014,-20.5868793 23.8446155,48.7515818 C-15.0935703,118.090043 124.808111,78.4413433 124.808111,166.335753 C124.808111,253.293452 271.665747,262.178548 281.452861,198.734381 C291.239974,135.290214 295.84708,106.270976 226.070786,69.4044392 Z"/>
+        <path fill="#58C1FF" d="M187.308742,59.0127643 C126.495789,26.6776545 62.1218951,25.98918 39.9626164,63.1124726 C17.8033377,100.235765 127.221138,85.0532274 127.221138,162.144151 C127.221138,239.235075 262,246.677847 262,177.464203 C262,108.250558 248.121695,91.347874 187.308742,59.0127643 Z"/>
+        <path fill="#0098F3" d="M199.009604,76.9154115 C152.375705,48.3192974 94.4167216,31.8140918 71.07646,62.3547387 C47.7361985,92.8953855 132.240151,90.9175583 132.240151,157.874948 C132.240151,224.832337 221.541504,205.144765 239.101011,183.853449 C256.660518,162.562133 245.643502,105.511526 199.009604,76.9154115 Z"/>
+      </g>
+    </g>
+    <text fill="#354052" font-family="OpenSans-Bold, Open Sans" font-size="32" font-weight="bold" mask="url(#nielsen1-b)">
+      <tspan x="14" y="93.8">Integrate Nielsen data </tspan> <tspan x="14" y="145">easier than ever</tspan>
+    </text>
+    <text fill="#354052" font-family="OpenSans-Regular, Open Sans" font-size="20" mask="url(#nielsen1-b)">
+      <tspan x="14" y="184">Get smarter data, faster</tspan>
+    </text>
+    <rect width="447" height="12" fill="#E5E5E5" fill-rule="nonzero"/>
+    <circle cx="7" cy="6" r="3" fill="#F00" fill-rule="nonzero"/>
+    <circle cx="17" cy="6" r="3" fill="#FFCA38" fill-rule="nonzero"/>
+    <circle cx="27" cy="6" r="3" fill="#7ED321" fill-rule="nonzero"/>
+  </g>
+</svg>
