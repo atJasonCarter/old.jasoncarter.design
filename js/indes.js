@@ -1,14 +1,73 @@
+
+
+// var keyframes = anime({
+//   targets: '.body1',
+//   translateX: [
+//     { value: -109, duration: 200, elasticity: 0 },
+//     { value: -195, duration: 50, delay: 83, elasticity:0 },
+//     { value: -198, duration: 200, elasticity: 0 },
+//     { value: 234, duration: 50, elasticity: 0 },
+//     { value: 0, duration: 50, elasticity: 0 },
+//     { value: -81, duration: 50, elasticity: 0 },
+//     { value: 0, duration: 50, elasticity: 0 },
+//   ],
+//   translateY: [
+//     { value: 259, duration: 200, elasticity: 0 },
+//     { value: -52, duration: 50, elasticity: 0 },
+//     { value: -48, duration: 200, elasticity: 0 },
+//     { value: -68, duration: 25, elasticity: 0 },
+//     { value: -96.5, duration: 25, elasticity: 0 }, 
+//     { value: 60, duration: 50, elasticity: 0 }, 
+//     { value: 0, duration: 50, elasticity: 0 },
+//     { value: -14, duration: 50, elasticity: 0 },
+//     { value: 0, duration: 50, elasticity: 0 }
+
+//   ],
+//   skewX: [
+//     { value: 21, duration: 200, elasticity: 0 },
+//     { value: 34, duration: 50, elasticity: 0 },
+//     { value: 33, duration: 200, elasticity: 0 },
+//     { value: -53, duration: 50, elasticity: 0 },
+//     { value: 0, duration: 50, elasticity: 0 },
+//     { value: 19, duration: 50, elasticity: 0 },
+//     { value: 0, duration: 50, elasticity: 0 }
+//   ],
+ 
+//   scaleX: [
+//     { value: 0, duration: 10, easing: 'easeOutExpo' },
+//     { value: 1, duration: 00, elasticity: 0 }
+    
+//   ],
+//   scaleY: [
+//     { value: 0, duration: 10 },
+//     { value: 1.28, duration: 190, easing: 'easeOutExpo' },
+//     { value: 1.44, duration: 50 },
+//     { value: 1.51, duration: 200, easing: 'easeOutExpo' },
+//     { value: 1.28, duration: 50 },
+//     { value: 1, duration: 50, easing: 'easeOutExpo' },
+//     { value: 1.11, duration: 50, easing: 'easeOutExpo' },
+//     { value: 1, duration: 50, easing: 'easeOutExpo' }
+//   ],  
+//   loop: false
+
+// });
+
+
+
+
 var lineDrawing = anime({
   targets: '.line1 path',
   strokeDashoffset: [anime.setDashoffset, 0],
   easing: 'easeInOutSine',
   duration: 3500,
-  delay: function(el, i) { return i * 250 },
+  delay: 3000,
   direction: 'alternate',
   loop: false
 });
 
 //footer
+$(document).ready(function(){
+  $(".foot").hide();});
 $(document).scroll(function() {
   var y = $(this).scrollTop();
   if (y > 400) {

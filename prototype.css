@@ -8,7 +8,7 @@
     --differentBlue: rgb(61, 110, 151);
     --black: rgb(22,22,22);
     --spec: rgb(137, 146, 221);
-    cursor: nw-resize;
+    
    
 }
 
@@ -16,11 +16,15 @@
 h2{
     font-size: 1.5em;
 }
-
+span:hover{
+    cursor: pointer, auto;
+}
 a:hover {
+    cursor: pointer, auto;
     color: #0FA0CE; }
 
 body { 
+    cursor: nw-resize;
     background-color: var(--sky);
 }
 
@@ -247,9 +251,9 @@ body {
     height: 324px; */
     font-size:1.5rem;
     right:0px;
-    padding:1.6em 1.6em 1.6em 0;
+    padding:1.2em 1.2em 1.2em 0;
     position: relative;
-    cursor: auto;
+    cursor: pointer, auto;
     pointer-events: auto;
     /* -webkit-tap-highlight-color: rgba(0,0,0,0);
     animation-iteration-count: infinite;
@@ -329,7 +333,14 @@ span{
 
 }
 
-
+.fireplace3{
+    font-size: 1 rem;
+    color: #e83779;
+}
+.mailto{
+    text-decoration: underline;
+    color: #e83779;
+}
 
 /* spacing */
 
@@ -339,7 +350,7 @@ span{
     }
 }
 @media (min-width:1132px){
-    .fireplace2{
+    .fireplace2, .fireplace3{
         width: 66%;
     }
 }
@@ -595,6 +606,7 @@ main {
     bottom:-1200px;
 }
 .foot{
+        z-index: 2355;
           position: fixed;
           clear: both;
           right: 3%;
@@ -626,9 +638,7 @@ main {
 
 
 @media(max-width:376px){
-    .foot{
-font-size: .4em;
-    }
+
     span.mail{
         color: #e83779;
     background-color: #112CFF;
