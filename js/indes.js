@@ -60,7 +60,7 @@ var lineDrawing = anime({
   strokeDashoffset: [anime.setDashoffset, 0],
   easing: 'easeInOutSine',
   duration: 3500,
-  delay: 3000,
+  delay: 3600,
   direction: 'alternate',
   loop: false
 });
@@ -135,7 +135,7 @@ $(document).ready(function(){
     });
 
 
-var holeShow = document.querySelector('');
+var holeShow = document.querySelector('.hole');
 
 function animatefig(scale, duration, elasticity) {
   anime.remove(holeShow);
