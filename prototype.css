@@ -336,6 +336,18 @@ body {
 h3{
     text-align:left;
 }
+h3.prince{
+    z-index: 9998;
+}
+h3.prince:hover{
+ color: #112CFF;
+ transition:.3s ease-in;
+ -webkit-transition:.3s ease-in;
+ -moz-transition:.3s ease-in;
+ -ms-transition:.3s ease-in;
+ -o-transition:.3s ease-in;
+}
+
 
 #hey{
     color: var(--blue); 
@@ -382,10 +394,31 @@ span{
     .ho2, .ho3, .ho4, .ho5, .ho6, .line2, .line3, .line4, .line5, .line6{
         visibility: hidden;
     }
-     .dude{
-        position: relative;
-         top:-200px;
+    .allhero{
+         position: relative;
+         top:-44px;
+         right:-60px;
+         transform:scale(.65);
+         -webkit-transform:scale(.65);
+         -moz-transform:scale(.65);
+         -ms-transform:scale(.65);
+         -o-transform:scale(.65);
+}
+    #welcome5{
+             padding-top:69px;
     }
+    .welcome{
+        top: 522px;
+    }
+
+    #welcome1{
+        top: -522px;
+        position: absolute;
+    }
+    .movebox{
+        top:522px;
+    }
+ 
 }
 @media (min-width:1250px){
     .fireplace2, .fireplace3{
@@ -651,6 +684,7 @@ main {
     bottom:-1200px;
 }
 .foot{
+    cursor: pointer;
         z-index: 2355;
           position: fixed;
           clear: both;
@@ -701,12 +735,25 @@ main {
      
 }
 
-span.mail{
+label.mail{
+    cursor: pointer;
     margin-left: -6px;
     background-color: #112CFF;
     color: #FFF;
     padding: 2px 6px;
     border-radius: 6px;;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+label.mail:hover{
+    cursor: pointer;
+    margin-left: -6px;
+    background-color: #e83779;
+    color: #FFF;
+    padding: 2px 6px;
+    border-radius: 6px;
     -webkit-border-radius: 6px;
     -moz-border-radius: 6px;
     -ms-border-radius: 6px;
@@ -788,4 +835,10 @@ span.mail{
     cursor: url('wow.svg'), auto;
     background: #f1f7ff;
     background-color: #F1F7FF;
+}
+
+@media(max-width:577px){
+.welcome{
+    top: 522px;
+}
 }
