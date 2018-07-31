@@ -338,24 +338,24 @@ gtag('config', 'UA-122832625-1');
 <div class="container">
     <div class="welcome">
         <div class="row">
-            <div class="spec">
+            <div class="spec" id="welcome5">
                 Introduction
             </div>
         </div>
-        <div class="row">
+        <div class="row" id="welcome1">
             <h1> <strong><span id="hey">Hey!</span></strong> 
-                I'm Jason</h1>
+                <span id="welcome15">I'm Jason</span></h1>
         </div>
         <div class="welcome2 twelve columns">
         <div class="row">
-            <h2 class="seven columns fireplace">
+            <h2 class="seven columns fireplace" id="welcome2">
                 I'm a digital designer in Chicago</h2>
         </div>
         <div class="row">
-            <h2 class="six columns fireplace2">I specialize in optimization and creating wonderful experiences</h2>
+            <h2 class="six columns fireplace2" id="welcome3">I specialize in optimization and creating wonderful experiences</h2>
         </div>
         <div class="row">
-            <p class="six columns fireplace3">My portfolio is currently being updated, I'd love the opportunity to show you what Ive been working on <a class="mailto" href="mailto:jcarter91@gmail.com" onclick="openLink(this)">in person</a></p>
+            <p class="six columns fireplace3" id="welcome4">My portfolio is currently being updated, I'd love the opportunity to show you what Ive been working on <a class="mailto" href="mailto:jcarter91@gmail.com" onclick="openLink(this)">in person</a></p>
         </div>
     </div>  
     </div>
@@ -614,7 +614,7 @@ gtag('config', 'UA-122832625-1');
 <script src="js/easings.js"></script>
 <script src="js/demo6.js"></script>
 <script src="https://unpkg.com/spiritjs/dist/spirit.js"></script>
-
+<!-- cover load -->
 <script>
         setTimeout(Hidden, 300)
         
@@ -624,6 +624,43 @@ gtag('config', 'UA-122832625-1');
             }
         </script>
 
+<!-- text load -->
+<script>
+
+setTimeout(fadeIn, 3000); 
+function fadeIn() {
+  document.getElementById('welcome1').style.opacity = '1';
+}
+
+setTimeout(fadeIn15, 5000); 
+function fadeIn15() {
+  document.getElementById('welcome15').style.opacity = '1';
+}
+
+setTimeout(fadeIn2, 7000)
+function fadeIn2() {
+    document.getElementById('welcome2').style.opacity = '1';
+}
+
+setTimeout(fadeIn3, 9000)
+function fadeIn3() {
+    document.getElementById('welcome3').style.opacity = '1';
+}
+
+setTimeout(fadeIn4, 12000)
+function fadeIn4() {
+    document.getElementById('welcome4').style.opacity = '1';
+}
+
+setTimeout(fadeIn5, 12000)
+function fadeIn5() {
+    document.getElementById('welcome5').style.opacity = '1';
+}
+</script>
+        
+
+
+<!-- animation blue -->
 <script >
 
 setTimeout(delayFunc, 3000)

@@ -36,7 +36,14 @@ body {
     top:-25px;
     left:-25px;
     position: fixed;
-    background-color: #F1F7FF;
+    background-color: #f1f7ff;
+}
+
+#welcome1, #welcome15, #welcome2, #welcome3, #welcome4, #welcome5{
+    opacity: 0;
+    transition: .6s opacity;
+    transition-timing-function: ease-out;
+
 }
 
 /* ========================================================================== */
@@ -334,6 +341,9 @@ h3{
 }
 span{
     color: var(--blue);
+}
+#welcome15{
+    color: var(--black);
 }
 
 .spec {
