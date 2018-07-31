@@ -60,7 +60,7 @@ var lineDrawing = anime({
   strokeDashoffset: [anime.setDashoffset, 0],
   easing: 'easeInOutSine',
   duration: 3500,
-  delay: 3600,
+  delay: 5000,
   direction: 'alternate',
   loop: false
 });
