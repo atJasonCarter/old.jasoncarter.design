@@ -17,10 +17,10 @@ h2{
     font-size: 1.5em;
 }
 span:hover{
-    cursor: pointer, auto;
+    cursor: url("/Logo.png"), auto;
 }
 a:hover {
-    cursor: pointer, auto;
+    cursor: url("../Logo.png");
     color: #0FA0CE; }
 
 body { 
@@ -29,6 +29,7 @@ body {
 }
 
 #cover{
+
     visibility:visible;
     z-index:9999999999999999999;
     height: 200vh;
@@ -275,7 +276,7 @@ body {
     right:0px;
     padding:1.2em 1.2em 1.2em 0;
     position: relative;
-    cursor: pointer, auto;
+    
     pointer-events: auto;
     /* -webkit-tap-highlight-color: rgba(0,0,0,0);
     animation-iteration-count: infinite;
@@ -341,8 +342,13 @@ h3{
     font-weight: 900;
 }
 span{
+    cursor: pointer;
+    background: #f1f7ff;
+    background-color: #F1F7FF;
     color: var(--blue);
 }
+
+
 #welcome15{
     color: var(--black);
 }
@@ -767,4 +773,18 @@ span.mail{
     100% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); } 
   }
   
-  
+  span:hover{
+    cursor: url('logo.svg'), auto;
+    background: #f1f7ff;
+    background-color: #F1F7FF;
+}
+#coffee:hover{
+    cursor: url('covfe.svg'), auto;
+    background: #f1f7ff;
+    background-color: #F1F7FF;
+}
+.card:hover{
+    cursor: url('wow.svg'), auto;
+    background: #f1f7ff;
+    background-color: #F1F7FF;
+}
