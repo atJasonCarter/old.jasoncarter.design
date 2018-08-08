@@ -341,9 +341,9 @@ body {
      font-size: 1.8em;
  }
 
-#nielsen1-a{
+.nielsen1-a{
     width:100%; 
-    height:100%;
+    height:auto;
 }
 
 #addtl-a, #addtl-b, #addtl-c{
