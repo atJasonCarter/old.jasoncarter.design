@@ -770,7 +770,6 @@ main {
           max-width: 114px;
           background-color: #f1f7ff49;
           border: rgba(241, 247, 255, 0.74) 2px solid;
-
           height:77px;
           padding-right: 4px;
           padding-top:4px;
@@ -928,10 +927,10 @@ label.mail:hover{
 
 .prince:hover{
     color: #112CFF;
-    transition:.3s ease-in;
-    -webkit-transition:.3s ease-in;
-    -moz-transition:.3s ease-in;
-    -ms-transition:.3s ease-in;
-    -o-transition:.3s ease-in;
-   }
+    transition:.6s ease-in;
+    -webkit-transition:.6s ease-in;
+    -moz-transition:.6s ease-in;
+    -ms-transition:.6s ease-in;
+    -o-transition:.6s ease-in;
+}
    
