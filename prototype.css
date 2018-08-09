@@ -22,10 +22,10 @@ span:hover{
 }
 a:hover {
     cursor: url("../Logo.png");
-    color: #0FA0CE; }
+ }
 
 body { 
-    cursor: pointer;
+    cursor: auto;
     background-color: var(--sky);
 }
 
@@ -271,12 +271,20 @@ body {
 
 /* projects */
 
-
+.about{
+    z-index: 7754333;
+}
 .movebox{
     position: relative;
     top:880px;
     opacity: 0%;
 }
+
+.box{
+height:180px;
+
+}
+
 .projects{
     display:flex;
     align-items:center;
@@ -336,6 +344,31 @@ body {
      position: relative; 
  }
 
+ .prance{
+
+    background-color: rgba(144, 197, 216, 0.315);
+    background-image: linear-gradient(0deg, #18b4ec50 0%, #2af59a60 100%);
+    
+}
+
+ .bottom{
+     position: absolute;
+     top:500px;
+     fill: #2AF598;
+     color:#2AF598;
+ }
+
+ .top{
+     margin-top: -172px;
+     top: -172px;
+     color: #08AEEA;
+     fill:#08AEEA;
+     transform: rotate(180deg) ;
+     -webkit-transform: rotate(180deg) ;
+     -moz-transform: rotate(180deg) ;
+     -ms-transform: rotate(180deg) ;
+     -o-transform: rotate(180deg) ;
+}
  .ptitle{
      font-weight: 800;
      font-size: 1.8em;
@@ -353,9 +386,9 @@ body {
 
 
 /* typography */
-p{
-    font-size:1.7rem;
-  line-height:2.8rem;
+p {
+    font-size:2.3rem;
+  line-height:3rem;
 }
 
 .q{
@@ -390,16 +423,11 @@ b{
 }
 
 .prince{
-    z-index: 9998;
+    z-index: 9999111111;
+    color:white;
+    opacity: 88%;
 }
-.prince:hover{
- color: #112CFF;
- transition:.3s ease-in;
- -webkit-transition:.3s ease-in;
- -moz-transition:.3s ease-in;
- -ms-transition:.3s ease-in;
- -o-transition:.3s ease-in;
-}
+
 
 
 #hey{
@@ -407,9 +435,8 @@ b{
     font-weight: 900;
 }
 span{
-    cursor: pointer;
-    background: #f1f7ff;
-    background-color: #F1F7FF;
+    cursor: auto;
+
     color: var(--blue);
 }
 
@@ -419,10 +446,10 @@ span{
 }
 
 .spec {
-    font-size: .8rem;
+    font-size: .9rem;
     color: var(--spec);
     text-transform: uppercase;
-    font-family: "ibm plex sans";
+    font-family: "IBM plex sans, monospace, sans-serif";
     font-weight: 500;
     margin-bottom: 12px;
     margin-top: 48px;
@@ -430,7 +457,8 @@ span{
 }
 
 .fireplace3{
-    font-size: 1 rem;
+    font-size: .85em;
+    line-height: 1.4em;
     color: #e83779;
 }
 .mailto{
@@ -558,7 +586,7 @@ span{
   }
   50%{
     
-    stroke: #e83779;
+    stroke: #2af59a;
 
 
 
@@ -593,25 +621,13 @@ span{
 
 .demo-6 {
 
-	--color-text: #120047;
-	--color-bg: #333;
-	--color-link: #110046;
-	--color-link-hover: #e83779;
-	--color-info: #fff;
 	--path-fill-1: url(#gradient1);
 	--path-fill-2: url(#gradient2);
 	--path-fill-3: url(#gradient3);
 	--path-fill-4: url(#gradient4);
 	--color-title: inherit;
 	--font-weight-title: 400;
-	--color-menu: #ffffff;
-	--color-menu-hover: #c14343;
-	--font-family-menu: var(--font-family-title);
-	--font-size-menu: 3.5vmax;
-	--font-weight-menu: 400;
-	--button-bg: #120047;
-	--button-circle:rgba(31, 28, 199, 0.16);
-	--button-line: #ffffff;
+
 }
 
 /* Fade effect */
@@ -628,16 +644,18 @@ span{
 
 a {
 	text-decoration: none;
-	color: #5d93d8;
-	color: var(--color-link);
+    color: var(--blue);
 	outline: none;
 }
 
-a:hover,
-a:focus {
-	color: #423c2b;
-	color: var(--color-link-hover);
-	outline: none;
+a.link:hover,
+a.link:focus {
+    background: -webkit-linear-gradient(210deg, #006eff, #1f39ff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    outline: none;
+
 }
 
 .hidden {
@@ -741,7 +759,8 @@ main {
     bottom:-1200px;
 }
 .foot{
-          cursor: pointer;
+    font-size: .9em;
+          cursor: auto;
           z-index: 2355;
           position: fixed;
           clear: both;
@@ -749,7 +768,9 @@ main {
           bottom: 8%;
           padding-left: 9px;
           max-width: 114px;
-          background-color: #F1F7FF;
+          background-color: #f1f7ff49;
+          border: rgba(241, 247, 255, 0.74) 2px solid;
+
           height:77px;
           padding-right: 4px;
           padding-top:4px;
@@ -781,7 +802,7 @@ main {
 @media(max-width:376px){
 
     span.mail{
-        cursor: pointer;
+        cursor: auto;
         color: #e83779;
     background-color: #112CFF;
     padding: 2px 6px;
@@ -798,7 +819,7 @@ main {
 }
 
 label.mail{
-    cursor: pointer;
+    cursor: auto;
     margin-left: -6px;
     background-color: #112CFF;
     color: #FFF;
@@ -810,7 +831,7 @@ label.mail{
     -o-border-radius: 6px;
 }
 label.mail:hover{
-    cursor: pointer;
+    cursor: auto;
     margin-left: -6px;
     background-color: #e83779;
     color: #FFF;
@@ -904,3 +925,13 @@ label.mail:hover{
     top: 522px;
 }
 }
+
+.prince:hover{
+    color: #112CFF;
+    transition:.3s ease-in;
+    -webkit-transition:.3s ease-in;
+    -moz-transition:.3s ease-in;
+    -ms-transition:.3s ease-in;
+    -o-transition:.3s ease-in;
+   }
+   

@@ -80,7 +80,7 @@ class ShapeOverlays {
   const elmcard = document.querySelector('.movebox');
   const elmOverlay = document.querySelector('.shape-overlays');
   const overlay = new ShapeOverlays(elmOverlay);
-  // var href = $(this).attr('href');
+  var href = $(this).attr('href');
 
  $('.card').click( function(event) {
 

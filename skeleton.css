@@ -97,8 +97,8 @@ html {
 body {
   font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
   line-height: 1.6;
-  font-weight: 400;
-  font-family: 'Nunito', sans-serif;
+  font-weight: 300;
+  font-family: 'Rubik', sans-serif;
   color: rgb(19, 42, 59) }
 
 
@@ -125,18 +125,12 @@ h6 { font-size: 1rem; line-height: 1.6;  letter-spacing: 0; }
   h6 { font-size: 1.5rem; }
 }
 
-p {
-  margin-top: 0; }
+p {    font-size:1.7rem;
+  line-height:2.2rem;
+  margin-top: 0;
+  color: #2f4e66; }
 
-
-/* Links
-
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-a {
-  color: #1EAEDB; }
-a:hover {
-  color: #0FA0CE; }
-
+  
 
 /* Buttons
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
