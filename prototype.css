@@ -383,17 +383,7 @@ width: 100%;
     height:100%;
 }
 
-.header{
-    background-image: url(/imgs/N-Header.png);
-    display: block;
-    height: 530px;
-    max-height: 530px;
-    width: 1440px;
-    max-width: 100%;
-    overflow: hidden;
-    background-size: 100vw;
-    box-shadow:  0 2px 22px 24px  #00000009;
-}
+
 
 .folio{
     max-width: 66vw;
@@ -405,7 +395,7 @@ width: 100%;
 .foliobg{
     background-color: #2AF598;
     width: 100vw;
-    padding-top: 68px;
+    padding-top: 88px;
     padding-bottom: 68px;
 }
 
@@ -552,6 +542,11 @@ span{
 .space2{
     margin-top: 48px;
     margin-bottom: 48px;
+}
+
+.space3{
+    margin-top: 48px;
+    margin-bottom: 8px;
 }
 
     .welcome2{margin-bottom: 4px;}
@@ -713,6 +708,22 @@ main {
 
 
 /* Header */
+
+.header{
+    background-image: url(/imgs/N-Header.png);
+    display: block;
+    height: 530px;
+    max-height: 530px;
+    width: 1440px;
+    max-width: 100%;
+    overflow: hidden;
+    background-size: 100vw;
+    box-shadow:  0 2px 22px 24px  #00000009;
+    margin-top: -22px;
+
+    margin-right: -2%;
+
+}
 
 .shape-overlays {
 	width: 100vw;
