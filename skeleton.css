@@ -57,7 +57,7 @@
     width: 80%; }
   .column,
   .columns { 
-    margin-left: 4%;} 
+    margin-left: .04%;} 
   .column:first-child,
   .columns:first-child {
     margin-left: 0; }
@@ -135,6 +135,17 @@ p {    font-size:1.7rem;
     margin-top: 0;
     font-weight:300;
   }
+  label.foliot{
+    font-size: 1rem;
+
+    margin-left: 40vw;
+    align-items: center;
+    align-self: auto;
+    font-family: "IBM plex sans, monospace, sans-serif";
+    font-weight: 400;
+    padding-top: 12px;
+ }
+
   
 
 /* Buttons
