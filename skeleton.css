@@ -144,7 +144,7 @@ p {    font-size:1.3rem;
     margin-left: 40vw;
     align-items: center;
     align-self: auto;
-    font-family: "IBM plex sans, monospace, sans-serif";
+    font-family: 'IBM plex sans', monospace, sans-serif;
     font-weight: 400;
     padding-top: 12px;
  }
