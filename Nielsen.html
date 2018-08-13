@@ -1,19 +1,24 @@
 <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-        <title>Jason 🖥 Product Design</title>
-        <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-        <link rel="stylesheet" href="skeleton.css">
-        <link rel="stylesheet" type="text/css" charset="utf-8"  media="screen, projection" href="prototype.css" />
-
-        <link rel="icon" 
-      type="image/png" 
-      href="Logo.png">
-        <script>document.documentElement.className = 'js';</script>
-</head>
+                <!-- meta -->
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+                <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+                <title>Jason 🖥 Product Design</title>
+                <!-- typography -->
+                <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans" rel="stylesheet">
+                <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+                <!-- css -->
+                <link rel="stylesheet" href="skeleton.css">
+                <link rel="stylesheet" type="text/css" charset="utf-8"  media="screen, projection" href="prototype.css" />
+                <!-- favicon -->
+                <link rel="icon" 
+              type="image/png" 
+              href="imgs/fav.png">
+                <script>document.documentElement.className = 'js';</script>
+        </head>
+        
 
 <body class="demo-6 render">
-        <Div class="header"></Div>
+        <Div class="headerN"></Div>
         <div class="container"> 
 
         <div class="two columns"><p></p></div>        <h3 class="nine columns">Tools</h3> 
@@ -64,14 +69,30 @@
         </div>
         <div class="two columns"><p></p></div>                <h3 class="nine columns">Solution <span>#2</span></h3>
         <div class="two columns"><p></p></div>                <p class="nine columns">After our first round of testing I rebuilt our flow architecture to be more cognitively intuitive.  I removed the hamburger menu, and added a fixed, visible, side nav; a pattern that developers repeatedly mentioned was their ideal navigation flow for portals (this also matched our competitive analysis research). The new side nav included both parent and first-child pages, with the goal of making every page reachable in two clicks. I also created a marketing and landing page, that allowed our back-end to begin pre-loading calls to our data-lake. </p>
-        <div class="two columns"><p></p></div>                                <p class="nine columns">To save loading time and visual-overload, I divided our dashboard into three new dashboards each with their own dedicated pages; one for extracts, one for API management, and one for saved data selections. As a further speed enhancement our team decided to only initially show information on our dashboards that could be pulled from a maximum of 3 servers (instead of the 6 our first solution had). Progressive disclosure allowed us to show the remaining information in a pull-out drawer.</p>
+        </div>
+
+        <div class="foliobg2">
+                        <img class="folio" src="/imgs/N-step 2.png" alt="Empty State Dashboard">
+                        <label class="foliot" for="Empty state dashboard"> Navigate through the links in the top right of each panel</label>
+    </div>  
+    <div class="container">
+        <div class="two columns"><p></p></div>                                <p class="nine columns">To save loading time and visual-overload, I divided our dashboard into three individual pages; one for extracts, one for API management, and one for saved data selections. As a further speed enhancement our team decided to only initially show information on our dashboards that could be pulled from a maximum of 3 servers (instead of the 6 our first solution had). Progressive disclosure allowed us to show the remaining information in a pull-out drawer.</p>
 
         <div class="two columns"><p></p></div>                <p class="nine columns">We also developed governance and security features. These include fallback measures for developers that might accidentally write a recursive script to infinitely pull-data during an extract, warning users if the data in their saved-selection was altered, and If their API plan was on their final month of their plan.</p>
 
-        </div>         
+            
+        <div class="row space2"></div>
+        <div class="two columns"><p></p></div>        <Label class="spec nine columns">Conclusion</Label>
+        <div class="two columns"><p> </p></div> <h3 class="nine columns">Wow, what a wild ride</h3>
+
+                
+        <div class="two columns"><p></p></div>
+        <p class="nine columns">With billions of rapidly refreshing different data points to filter through, Nielsens data can be a challenge to sort through. This is compounded by the fact that relying on humans to sort through the different, disaggregated data bases can takes days if not weeks. By enabling developers to take control of this process we compressed the timeline to minutes and hours.  To move forward, our goal with our developer studio was to make this process the easiest part of the developers day by using heuristic principles to make the process as intuitive as possible.  Both qualatative and quantitative testing allowed us to make quick data-driven decisions to best achieve these goals. We worked on a whole lot more enhancements, but I’ll have to tell you about them over a coffee meeting, my treat. 😉</p>
+</div> 
+
 </body>
 <footer>
-        <div id="foot" class="foot">
-                <a href="mailto:jcarter91@gmail.com"><label class="mail">Send an email</label> let's get coffee ☕️☕️☕️☕️☕️</a>
-        </div>
-</footer>
+                <div id="foot" class="foot">
+                    <a class=amail href="mailto:jcarter91@gmail.com"><label class="mail">Send an email</label> let's get coffee ☕️☕️☕️☕️☕️</a>
+                </div>
+                </footer>

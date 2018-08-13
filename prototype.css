@@ -295,9 +295,10 @@ height:180px;
 .card {
     overflow: visible;
     z-index: 900;
+    
     /* fill: var(--white);
     fill-opacity: 100%;
-    box-shadow: -2px 2px 8px var(--shadow);
+    
     border-radius: 50%;
     height: 324px; */
     font-size:1.5rem;
@@ -340,9 +341,6 @@ height:180px;
 }
  */
 
- .prince{
-     position: relative; 
- }
 
  .prance{
 width: 100%;
@@ -398,11 +396,17 @@ width: 100%;
     padding-top: 88px;
     padding-bottom: 68px;
 }
+.foliobg2{
+    background-color: #ecaac2;
+    width: 100vw;
+    padding-top: 88px;
+    padding-bottom: 68px;
+}
 
 /* typography */
 p {
-    font-size:2.3rem;
-  line-height:3rem;
+    font-size:2rem;
+  line-height:3.3rem;
 }
 
 .q{
@@ -429,7 +433,8 @@ span.h5{
 }
 
 b{
-    font-weight:500;
+    font-weight:300;
+
 }
 
 .egg:hover{
@@ -437,11 +442,11 @@ b{
 }
 
 .prince{
+    position: relative; 
     z-index: 9999111111;
-    color:white;
+    color:#2f3031;
     opacity: 88%;
 }
-
 
 
 #hey{
@@ -460,11 +465,12 @@ span{
 }
 
 .spec {
-    font-size: .9rem;
+    font-size: 1.2rem;
     color: var(--spec);
     text-transform: uppercase;
     font-family: "IBM plex sans, monospace, sans-serif";
-    font-weight: 500;
+    font-weight: 600;
+    letter-spacing: 1.6;
     margin-bottom: 12px;
     margin-top: 48px;
 
@@ -709,20 +715,33 @@ main {
 
 /* Header */
 
-.header{
+.headerN{
     background-image: url(/imgs/N-Header.png);
+    background-repeat: no-repeat;
     display: block;
     height: 530px;
     max-height: 530px;
-    width: 1440px;
-    max-width: 100%;
+    min-width: 100vw;
+    max-width: 110%;
     overflow: hidden;
     background-size: 100vw;
     box-shadow:  0 2px 22px 24px  #00000009;
     margin-top: -22px;
-
-    margin-right: -2%;
-
+}
+@media(max-width:1131px){
+    .headerN{
+    height: 330px;
+    max-height: 330px;
+    }
+}
+@media(max-width:730px){
+    .headerN{
+    height: 230px;
+    max-height: 330px;
+    min-width:180%;
+    padding-bottom: -28px;
+    box-shadow:  0 0;
+    }
 }
 
 .shape-overlays {
@@ -794,7 +813,7 @@ main {
     bottom:-1200px;
 }
 .foot{
-    font-size: .9em;
+    font-size: 14px;
           cursor: auto;
           z-index: 2355;
           position: fixed;
@@ -802,13 +821,15 @@ main {
           right: 3%;
           bottom: 8%;
           padding-left: 9px;
-          max-width: 114px;
+          max-width: 126px;
           background-color: #f1f7ff49;
           border: rgba(241, 247, 255, 0.74) 2px solid;
-          height:77px;
+          height:82px;
           padding-right: 4px;
           padding-top:4px;
+          padding-bottom: 14px;
           border-radius: 6px;
+        min-height: 81px;
           -webkit-border-radius: 6px;
           -moz-border-radius: 6px;
           -ms-border-radius: 6px;

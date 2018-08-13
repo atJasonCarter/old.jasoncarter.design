@@ -31,7 +31,7 @@
 .container {
   position: relative;
   width: 100%;
-  max-width: 960px;
+  max-width: 1080px;
   margin: 0 auto;
   padding: 0 20px;
   box-sizing: border-box; }
@@ -44,7 +44,7 @@
 /* For devices larger than 400px */
 @media (min-width: 400px) {
   .container {
-    width: 85%;
+    width: 92%;
     padding: 0; }
     .column:first-child,
     .columns:first-child {
@@ -54,7 +54,7 @@
 /* For devices larger than 550px */
 @media (min-width: 750px) {
   .container {
-    width: 80%; }
+    width: 88%; }
   .column,
   .columns { 
     margin-left: .04%;} 
@@ -95,7 +95,7 @@ are based on 10px sizing. So basically 1.5rem = 15px :) */
 html {
   font-size: 62.5%; }
 body {
-  font-size: 1.4em; /* currently ems cause chrome bug misinterpreting rems on body element */
+  font-size: 1.2em; /* currently ems cause chrome bug misinterpreting rems on body element */
   line-height: 1.6;
   font-weight: 300;
   font-family: 'Rubik', sans-serif;
@@ -125,10 +125,13 @@ h6 { font-size: 1rem; line-height: 1.6;  letter-spacing: 0; }
   h6 { font-size: 1.5rem; }
 }
 
-p {    font-size:1.7rem;
+p {    font-size:1.3rem;
   line-height:2.2rem;
   margin-top: 0;
-  color: #2f4e66; }
+  color: #2f3031; 
+  font-weight: 300;
+}
+
 
   b {    font-size:1.7rem;
     line-height:2.2rem;

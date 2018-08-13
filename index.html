@@ -1,16 +1,22 @@
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <title>Jason Carter Portfolio</title>
-    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans" rel="stylesheet">
-    <link rel="stylesheet" href="skeleton.css">
-    <link rel="stylesheet" type="text/css" charset="utf-8"  media="screen, projection" href="prototype.css" />
-    <link rel="icon" 
+        <!-- meta -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <title>Jason 🖥 Product Design</title>
+        <!-- typography -->
+        <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+        <!-- css -->
+        <link rel="stylesheet" href="skeleton.css">
+        <link rel="stylesheet" type="text/css" charset="utf-8"  media="screen, projection" href="prototype.css" />
+        <!-- favicon -->
+        <link rel="icon" 
       type="image/png" 
-      href="Logo.png">
-    <!-- <link rel="stylesheet" href="blob.css"> -->
-    <script>document.documentElement.className = 'js';</script>
+      href="imgs/fav.png">
+        <script>document.documentElement.className = 'js';</script>
+</head>
+
+
 
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -395,11 +401,10 @@ gtag('config', 'UA-122832625-1');
                 </div>
 
                 <div class = "row">
-                    <div class="two columns ptl"> 
-                            <label for="Project One"> UX / UI</label>
-                    </div>
+ 
         <!-- project one image -->
-                    <div class="four columns card" href="Nielsen.html" onclick="openLink(this)"><img class="nielsen1-a" src="/illu/Nielsen1.png">
+                    
+                    <div class="five columns card imgs" href="Nielsen.html" onclick="openLink(this)"><img class="nielsen1-a" src="/illu/Nielsen1.png">
                         <!-- <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  viewBox="0 0 447 251">
                             <defs>
                               <rect id="nielsen1-a"/>
@@ -437,10 +442,11 @@ gtag('config', 'UA-122832625-1');
                           </svg> -->
                           
                     </div>
+                    <div class="one column"><p></p></div>
         <!-- project one description -->
                     <div class="six columns card" href="Nielsen.html" onclick="openLink(this)">
                         <h3>Nielsen</h3>
-                        <div class="row"><p></p></div>
+                        <div class="row"><label for="Project One"> UX / UI</label></div>
                         <p>Nielsen's developer portal enables companies to get large data extracts programatically delivered via flat-files and APIs.  I tested and designed with developers to deliver the easiest and most intuitive experience possible</p>
                     </div>
                 </div>
@@ -451,11 +457,9 @@ gtag('config', 'UA-122832625-1');
 <article id="pr2">
     <div class="container space">
          <div class="row" href="https://www.atanas.design" onclick="openLink(this)">
-             <div class="two columns ptl"> 
-                            <label for="projectTwo">UX / UI</label>
-             </div>
+
               <!-- project two image -->
-              <div class="four columns card" href="https://www.atanas.design" onclick="openLink(this)"><img class="nielsen1-a"src="/illu/addtl.png">
+              <div class="five columns card" href="https://www.atanas.design" onclick="openLink(this)"><img class="nielsen1-a"src="/illu/addtl.png">
                 <!-- <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 447 251">
                     <defs>
                       <rect id="addtl-a"/>
@@ -482,10 +486,11 @@ gtag('config', 'UA-122832625-1');
                   </svg>                       -->
                   
             </div>
+            <div class="one column"><p></p></div>
 <!-- project two description -->
             <div class="six columns card" href="https://www.atanas.design" onclick="openLink(this)">
                 <h3>Coming soon</h3>
-                <div class="row"><p></p></div>
+                <div class="row"><label for="projectTwo"> In progress </label></div>
                 <p>Thanks for your patience! Let me give you a presentation on additional work and side projects I'm working on in the mean time</p>
             </div>
             </div>
@@ -504,7 +509,8 @@ gtag('config', 'UA-122832625-1');
 <div class="container ">
    <div class="box"></div>  
     <div class="row">
-            <label for="Principles" class="spec two columns">Principles</label>
+        <style>#principles{color:white; opacity: .8;}</style>
+            <label for="Principles" id="principles" class="spec two columns"> Principles</label>
     </div>
     <div class="row">
         <div class="prince five columns">
@@ -512,7 +518,7 @@ gtag('config', 'UA-122832625-1');
           <b>Cognitive simplicity <span>></span> visual simplicity. Be clean and clear, don’t waste people’s time</b>
         </div>
         
-        <div class="one columns"><p></p> </div>
+        <div class="two columns"><p></p> </div>
 
         <div class="prince five columns">
                 <h3>Perfect is the enemy of progress</h3>
@@ -530,7 +536,7 @@ gtag('config', 'UA-122832625-1');
                 <h3>Teach others</h3> 
            <b>The best way to learn is to teach, enthusiastically teach others to improve yourself and the world around you</b>
         </div>
-        <div class="one columns"> <p></p></div>
+        <div class="two columns"> <p></p></div>
          <div class="prince five columns">
                 <h3>Delight users</h3>
                            <b>Find the core problem, make the product work, add <b class="egg">easter eggs.</b> Delighting users envelops the entire process, and starts with research</>
@@ -724,8 +730,9 @@ spirit.loadAnimation({
 }
 </script>
 
+<!-- body load -->
 <script>
-setTimeout(Visibility, 4350)
+setTimeout(Visibility, 4400)
 
      function Visibility() {
 
@@ -740,10 +747,11 @@ setTimeout(Visibility, 4350)
 <!-- Thank you to Patrick Brouwer who developed Spirit App and Julian Garnier who developed anime.js, and their raw intelligence, as well as their help they gave in problem solving bugs-->
 <!-- And a huged thank you to Andi Azry (www.andiazry.com), Yitong Zhang (zhayitong.com), Nelson Chang (nelsonchang.me), Kate Doornbos (dribbble.com/katedoornobos) Daniel Lee (www.shldrs.co); who helped troubleshoot, gave advice, and criticism that was incorporated into or influenced the final design -->
 
-</footer>
+
 </body>
 <!-- <legs></legs> -->
 <footer>
 <div id="foot" class="foot">
     <a class=amail href="mailto:jcarter91@gmail.com"><label class="mail">Send an email</label> let's get coffee ☕️☕️☕️☕️☕️</a>
 </div>
+</footer>
