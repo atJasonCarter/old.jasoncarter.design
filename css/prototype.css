@@ -18,10 +18,10 @@ h2{
     font-size: 1.5em;
 }
 span:hover{
-    cursor: url("Cursors/Logo.png"), auto;
+    cursor: url("../Cursors/Logo.png"), auto;
 }
 a:hover {
-    cursor: url("Cursors/Logo.png");
+    cursor: url("../Cursors/Logo.png");
  }
 
 body { 
@@ -438,7 +438,7 @@ b{
 }
 
 .egg:hover{
-    cursor: url('Cursors/bun.svg'), auto;
+    cursor: url('../Cursors/bun.svg'), auto;
 }
 
 .prince{
@@ -960,17 +960,17 @@ label.mail:hover{
   }
   
   span.hey:hover{
-    cursor: url('Cursors/logo.svg'), auto;
+    cursor: url('../Cursors/logo.svg'), auto;
     background: #f1f7ff;
     background-color: #F1F7FF;
 }
 #coffee:hover{
-    cursor: url('Cursors/covfe.svg'), auto;
+    cursor: url('../Cursors/covfe.svg'), auto;
     background: #f1f7ff;
     background-color: #F1F7FF;
 }
 .card:hover{
-    cursor: url('Cursors/wow.svg'), auto;
+    cursor: url('../Cursors/wow.svg'), auto;
     background: #f1f7ff;
     background-color: #F1F7FF;
 }
