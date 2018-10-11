@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="72" height="75" viewBox="0 0 72 75">
+  <g fill="none" fill-rule="evenodd" transform="translate(0 1)">
+    <g fill-rule="nonzero" stroke-width="1.5" transform="translate(1)">
+      <polygon fill="#FEFB8E" stroke="#FEFB8E" points="23.825 52.028 16.886 30.561 35 17.322 53.114 30.561 46.175 52.028"/>
+      <polygon fill="#FED98E" stroke="#FED98E" points=".553 47.759 .553 25.859 15.658 30.808 22.658 52.523 13.325 65.453"/>
+      <polygon fill="#FFEFBE" stroke="#FFEFBE" points="35.614 16.208 35.614 .247 56.246 6.991 69.018 24.684 53.912 29.633"/>
+      <polygon fill="#D09A4D" stroke="#D09A4D" points="14.368 66.195 23.702 53.265 46.298 53.265 55.632 66.195 35 72.938"/>
+      <polygon fill="#F4D8B0" stroke="#F4D8B0" points="47.342 52.523 54.342 30.808 69.447 25.859 69.447 47.759 56.675 65.453"/>
+      <polygon fill="#FFFED9" stroke="#FFFED9" points=".982 24.684 13.754 6.991 34.386 .247 34.386 16.208 16.088 29.633"/>
+    </g>
+    <text fill="#D09A4D" font-family="IBMPlexSans-Medium, IBM Plex Sans" font-size="21" font-weight="400">
+      <tspan x="30" y="45">7</tspan>
+    </text>
+  </g>
+</svg>

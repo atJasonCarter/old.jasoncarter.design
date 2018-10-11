@@ -1,0 +1,477 @@
+/* root */
+:root {
+  /* colors */
+  --purple: #4e2954;
+  --purpleGradient: linear-gradient(-45deg, #322f4a 0%, #4e2a54 100%);
+  --black: #32304a;
+  --off: rgba(50, 48, 74, 0.5);
+    --blue: #0651FF;
+  --light: #e7f0ff;
+  --ice: #f4fbff;
+  --yellow: #ffe8b4;
+  --yellowGradient: linear-gradient(67deg, #ffe3da 0%, #ffe8b4 78%);
+  --pink: #ffe4db;
+  --pinkGradient: linear-gradient(-216deg, #ffe3da 30%, #ffe8b4 100%);
+}
+/*  */
+/* layout */
+/*  */
+
+.menu {
+  display: flex;
+  height: 32px;
+  margin-left: calc(7.29% - 1em);
+  padding-top: 2em;
+  padding-bottom: 4.3333333em;
+  align-content: center;
+  position: relative;
+}
+.menu > li {
+  color: white;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+}
+.menu > li.link:hover {
+  background-color: rgba(255, 255, 255, 0.075);
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+
+.header {
+  background: linear-gradient(-315deg, #322f4a 0%, #4e2a54 100%);
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 805px;
+}
+.tablecontainer {
+  max-width: 100vw;
+  overflow: hidden;
+}
+.table {
+  position: absolute;
+  top: 654px;
+  max-width: 100vw;
+  overflow: hidden;
+/* height: 88%; */
+  z-index: 5;
+  right: 0;
+}
+/* dude */
+.body {
+  position: absolute;
+  top: 14.5px;
+  right: 4.375%;
+  z-index: 6;
+}
+.lines {
+  position: absolute;
+  top: 45px;
+  right: 7.2%;
+  z-index: 7;
+}
+/* dice */
+.d20 {
+  position: absolute;
+  top: 805px;
+  right: 19.2%;
+  z-index: 9;
+}
+.d12 {
+  position: absolute;
+  top: 775px;
+  right: 5.2%;
+  z-index: 9;
+}
+.d6 {
+  position: absolute;
+  top: 708px;
+  right: 3.2%;
+  z-index: 9;
+}
+
+.d20dice {
+  position: relative;
+  z-index: 19;
+}
+.d12dice {
+  position: relative;
+  z-index: 19;
+}
+.d6dice {
+  position: relative;
+  z-index: 19;
+}
+
+/* shadows */
+.d20shadow {
+  position: relative;
+  top: -40px;
+  left: -16px;
+}
+.d12shadow {
+  position: relative;
+  top: -52px;
+  left: -16px;
+}
+.d6shadow {
+  position: relative;
+  top: -60px;
+  left: -16px;
+}
+
+/* about */
+.intro {
+  display: inline-block;
+  color: white;
+  margin-left: 7.29%;
+}
+.introBox {
+  position: relative;
+  margin-left: 7.29%;
+  background-color: var(--light);
+  z-index: 20;
+  width: 48em;
+  box-shadow: 0 0 34px 0 rgba(0, 0, 0, 0.17);
+}
+.textbox {
+  padding-left: 5.333333em;
+  padding-right: 2.5em;
+  padding-bottom: 48px;
+}
+
+
+/* contact */
+.contact {
+}
+.contact1 {
+}
+
+
+/* work css */
+.work {
+  position: absolute;
+  top: 1365px;
+  margin-left: 7.29%;
+  z-index: 25;
+}
+.workContainer {
+  position: relative;
+  display: flex;
+  padding-left: 62px;
+  padding-right: 26px;
+  top: 32px;
+  width: 38.19%;
+  min-width: 355px;
+  min-height: 231px;
+  align-items: center;
+  background-color: var(--yellow);
+  z-index: inherit;
+}
+.workContainer > ul > li {
+  display: block;
+  position: relative;
+  max-height: 77px;
+  overflow: hidden;
+}
+.workCS {
+  display: flex;
+  width: 1440px;
+  max-width: 75vw;
+  height: auto;
+  min-height: 550px;
+  position: relative;
+  left: 32.51%;
+  top: -120px;
+  background-image: linear-gradient(-67deg, #ffe3da 0%, #ffe8b4 78%);
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  z-index: 22;
+}
+.mac {
+  position: relative;
+  display: flex;
+  align-self: center;
+  max-width: 797px;
+  height: auto;
+  z-index: 99;
+  overflow: hidden;
+}
+
+/* chocolates */
+#hand1 {
+  position: absolute;
+  top: 1947px;
+  z-index: 15;
+  left: 12%;
+}
+#yp {
+  position: absolute;
+  top: 2000px;
+  left: calc(14% - 105px);
+  z-index: 10;
+}
+#bp {
+  position: absolute;
+  top: 2087px;
+  left: calc(24% - 105px);
+  z-index: 3;
+}
+#pp {
+  position: absolute;
+  top: 2200px;
+  left: calc(16% - 105px);
+}
+
+/* side css */
+.side{
+    position: absolute;
+    top: 2250px;
+    right: calc(105px - 33%);
+    z-index: 25;
+}
+
+  .sideContainer {
+    position: relative;
+    display: flex;
+    right:0;
+    padding-left: 62px;
+    padding-right: 26px;
+    top: 32px;
+    width: 38.19%;
+    min-width: 355px;
+    min-height: 231px;
+    align-items: center;
+    background-color: var(--pink);
+    z-index: inherit;
+  }
+  .sideContainer > ul > li {
+    display: block;
+    position: relative;
+    max-height: 77px;
+    overflow: hidden;
+  }
+  .sideCS {
+    display: flex;
+    width: 1440px;
+    max-width: 75vw;
+    height: auto;
+    min-height: 550px;
+    position: relative;
+    right: 90%;
+    top: -120px;
+    background-image: linear-gradient(216deg, #ffe3da 30%, #ffe8b4 100%);
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    z-index: 22;
+  }
+
+        /* chocolates 2 */
+        #hand2 {
+            position: absolute;
+            top: 2917px;
+            z-index: 15;
+            right: 37%;
+          }
+          #wire {
+            position: absolute;
+            top: 2888px;
+            right: 36%;
+            z-index: 13;
+          }
+          #keyboard {
+            position: absolute;
+            top: 2900px;
+            z-index: 14;
+            right: 34%;
+          }
+
+    /* values */
+    .valueslink{
+        position: absolute;
+        top: 3200px;
+    }
+    .values{
+        display: flex;
+        width: 100vw;
+        min-height:542px;
+
+        margin: 0 auto;
+        background: linear-gradient(-315deg, #322f4a 0%, #4e2a54 100%);
+
+ align-content: center;
+ justify-content: center;
+}
+        .vLeft > p, .vRight > p{
+            font-size: 17px;
+            transition: all .2s ease;
+            -webkit-transition: all .2s ease;
+            -moz-transition: all .2s ease;
+            -ms-transition: all .2s ease;
+            -o-transition: all .2s ease;
+}
+        .vLeft > a{
+            font-family: "IBM Plex Sans", sans-serif;
+            font-weight: 300;
+            color: var(--light);
+            opacity: .3;
+            padding-top:34px;
+        }
+                 .vLeft > a:hover{
+                    opacity: .9;
+                    text-decoration: underline;
+                    transition: all .2s ease;
+                    -webkit-transition: all .2s ease;
+                    -moz-transition: all .2s ease;
+                    -ms-transition: all .2s ease;
+                    -o-transition: all .2s ease;
+}
+        .valueTitle{
+            padding-top:68px;
+            display:block;
+            padding-left: 105px;
+        }
+        
+        .vheader{
+            padding-bottom: 24px;
+        }
+        .vcont{
+           padding-top:28px;
+            clear: both;
+            margin: 0 18% 0 6%;
+            display: flex;
+        }
+        .vLeft{
+            position: relative;
+            padding-right: 24px;
+
+        }
+        .vRight{
+            position: relative;
+            padding-left: 24px;
+
+        }
+
+        .Footer{
+            position: absolute;
+            top:3750px ;
+            width: 100vw;
+            min-height:542px;
+            height:542px;
+            background-color: white;
+            color: var(--purple);
+            margin: 0 auto;
+            z-index:99;
+            display: flex;
+            justify-content: center;
+
+        }
+            .meet{
+                margin-top:126px;
+                display:flex;
+
+            }
+
+
+
+
+
+/*  */
+/* typography */
+/*  */
+h1 {
+  font-family: "SuezOne-Regular", "Suez One", "SuezOne", Serif;
+  font-size: 11.5em;
+  letter-spacing: 3.57px;
+  line-height: 180px;
+  text-align: left;
+}
+h2 {
+  font-family: "SuezOne-Regular", "Suez One", "SuezOne", Serif;
+  font-size: 4.88888883em;
+  color: #4e2954;
+  letter-spacing: 1.5px;
+  text-align: left;
+  line-height: 92px;
+}
+        .h2alt{
+            color:white;
+        }
+h3 {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 300;
+  font-size: 48px;
+  color: var(--purple);
+  letter-spacing: 1.24px;
+  text-align: left;
+  line-height: 72px;
+  padding-top: 48px;
+}
+        .h3alt{
+            color:white;
+            display: block;
+            clear:both;
+            bottom:18px;
+        }
+h4 {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 300;
+  font-size: 3em;
+  /* color: var(--purple); */
+  letter-spacing: 1.24px;
+  text-align: left;
+  line-height: 72px;
+}
+p {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1.75em;
+  color: var(--black);
+  text-align: left;
+  line-height: 32px;
+}
+        .palt{
+            color:white;
+        }
+b {
+  opacity: 0.5;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 700;
+  font-size: 1.1em;
+  color: var(--black);
+  text-align: left;
+}
+.menu {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1.75em;
+  color: #ffffff;
+  text-align: left;
+  line-height: 32px;
+  text-transform: uppercase;
+}
+
+
+/* accordion */
+.accordion {
+    color:var(--purple);
+    width:100%;
+    cursor: pointer;
+    border: none;
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+    background-color: #ffffff00;
+}
+
+.active, .accordion:hover { 
+    font-weight: 700;
+    color: var(--blue);
+}

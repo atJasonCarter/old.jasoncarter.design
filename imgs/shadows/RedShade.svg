@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="126" height="67" viewBox="0 0 126 67">
+  <defs>
+    <filter id="redshade-a" width="171.4%" height="415.8%" x="-35.7%" y="-157.9%" filterUnits="objectBoundingBox">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="10"/>
+    </filter>
+  </defs>
+  <ellipse cx="1104" cy="893.5" fill="#C90322" fill-rule="evenodd" filter="url(#redshade-a)" rx="42" ry="9.5" transform="translate(-1041 -860)"/>
+</svg>

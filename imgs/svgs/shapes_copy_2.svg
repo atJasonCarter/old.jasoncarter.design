@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="89" height="83" viewBox="0 0 89 83">
+  <g fill="none" fill-rule="evenodd" transform="rotate(20 50.507 56.678)">
+    <polygon fill="#F85170" fill-rule="nonzero" points="1.603 22.235 39.555 18.506 17.485 56.241"/>
+    <polygon fill="#F70993" fill-rule="nonzero" points="39.401 18.75 38.806 .559 78.542 21.83"/>
+    <polygon fill="#F7094A" fill-rule="nonzero" points="17.347 56.297 39.451 18.525 62.172 56.569"/>
+    <polygon fill="#F7095D" fill-rule="nonzero" points="1.644 22.271 17.512 56.136 .871 66.38"/>
+    <polygon fill="#E0003D" fill-rule="nonzero" points="39.386 18.61 78.428 21.826 62.094 56.538"/>
+    <polygon fill="#BC1643" fill-rule="nonzero" points=".867 66.342 17.412 56.106 39.482 88.192"/>
+    <polygon fill="#C90322" fill-rule="nonzero" points="61.722 56.545 78.494 21.577 77.923 66.281"/>
+    <polygon fill="#B90234" fill-rule="nonzero" points="17.465 56.243 62.23 56.441 39.488 88.184"/>
+    <polygon fill="#8E0017" fill-rule="nonzero" points="62.072 56.452 77.993 66.304 39.456 88.163"/>
+    <polygon fill="#FF72AF" fill-rule="nonzero" points="38.871 .75 39.537 18.562 1.532 22.332"/>
+    <text fill="#8E0017" font-family="IBMPlexSans-Medium, IBM Plex Sans" font-size="21" font-weight="400">
+      <tspan x="34.156" y="49.854">1</tspan>
+    </text>
+  </g>
+</svg>
