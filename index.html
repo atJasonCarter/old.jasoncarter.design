@@ -19,8 +19,18 @@
 
     <link rel="icon" type="image/png" href="imgs/fav.png">
     <!-- js -->
-    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- toggle js -->
+    <script>
+    $(document).ready(function(){
+    $('input[type="radio"]').click(function(){
+        var inputValue = $(this).attr("value");
+        var contact2box = $("." + inputValue);
+        $(".contact2").not(contact2box).hide();
+        $(contact2box).show();
+            });
+        });
+    </script>
 </head>
 
 <body>
@@ -243,45 +253,46 @@
             <!-- contact buttons -->
             <div class="contact contact1">
                 <div class="icons">
-                <div class="phone">
-                    <div class="phone">
-                    <button type="icon" class="phone icon">
-                        <img src="assets/icons/Phone.svg" alt="Phone number">
-                    </button>
-                    </div>
-                    <a class="p">Phone</a>
-                </div>
+                        <label>
+                            <input type="radio" name="contactSelect1" value="phone">
 
-                <div class="email">
-                    <div class="email">
-                        <button type="icon" class="email icon">
+                            <img src="assets/icons/Phone.svg" alt="Phone number">
+                            <a class="p">Phone</a>
+                        </label>
+
+                        <label>
+                            <input type="radio" name="contactSelect1" value="email">
+
                             <img src="assets/icons/Email.svg" alt="Email">
-                        </button>
-                    </div>
-                    <a class="p">E-mail</a>
-                </div>
 
-                <div class="linkedin">
-                    <div class="linkedin">
-                        <button type="icon" class="linkedin icon">
+                            <a class="p">E-mail</a>
+                        </label>
+
+                        <label>
+                            <input type="radio" name="contactSelect1" value="LinkedIn">
+
                             <img src="assets/icons/linkedin.svg" alt="LinkedIn">
-                        </button>
-                    </div>
-                    <a class="p">LinkedIn</a>
-                </div>
 
-                <div class="resume">
-                    <div class="resume">
-                        <button type="icon" class="resume icon">
+                            <a class="p">LinkedIn</a>
+                        </label>
+
+                        <label>
+                            <input type="radio" name="contactSelect1" value="Resume">
+
                             <img src="assets/icons/Resume.svg" alt="Resume">
 
-                    </div>
-                    <a class="p">Resume</a>
-                    </div>
-                </button>
-                <button class="contacts" onclick="location.href='/assets/Resume.pdf'"> Download Resume.pdf
-                </button>
+                            <a class="p">Resume</a>
+                        </label>
                 </div>
+
+                 <div id="contact22">
+                        <a class="phone contact2" href="*">(404) 992-2492</a>
+                        <a class="email contact2" href="*">jcarter91<span class="contactSpan">@gmail.com</span></a>
+                        <a class="LinkedIn contact2" href="www.linkedin.com/in/atJasonCarter"><span class="contactSpan">www.linkedin.com</span>/in/atJasonCarter</a>
+                        <button class="Resume contact2" onclick="location.href='/assets/Resume.pdf'"> Download Resume.pdf</button>
+                 </div>   
+                
+                
             </div>
         </ul>
 
@@ -503,6 +514,7 @@
         <!-- Footer -->
         <div class="Footer Contact">
             <H3 class="meet">Let's meet, I Love you.</H3>
+            <p class="copy">Designed with great joy and coded with position:absolute by Jason Carter</p>
 
             <!-- contact buttons -->
 
@@ -523,7 +535,7 @@
     </script>
 <script src="/js/anime.min.js"></script>
 <script src="js/acc1.js"></script>
-
+<script src="js/togs.js"></script>
 
 
 <!-- line -->

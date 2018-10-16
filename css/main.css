@@ -149,12 +149,13 @@
     display: flex;
     justify-content: space-between;
     width: 40vw;
+    justify-items: center;
 
 
 }
 .p{
     display:flex;
-    justify-content: space-between;
+    justify-content: center;
     padding-top:12px;
 }
 .icon{
@@ -170,6 +171,42 @@
     top:1000px;
     right: 7%;
 }
+
+.contact2{
+display:none;
+}
+
+#contact22{
+    display: flex;
+    justify-content: center;
+    
+}
+
+a.contact2, button.contact2{ 
+position: absolute;
+margin:56px auto;
+font-family: "IBM Plex Sans", sans-serif;
+font-weight: 300;
+font-size: 36px;
+color: var(--purple);
+letter-spacing: 1.24px;
+text-align: center;
+text-decoration: none;
+background-color:none;
+border:none;
+
+}
+button.contact2:hover{
+    cursor: pointer;
+}
+
+span.contactSpan{
+    font-family: "IBM Plex Sans", sans-serif;
+font-weight: 300;
+font-size: 36px;
+    color: var(--off);
+}
+
 
 
 /* work css */
@@ -388,16 +425,24 @@
             color: var(--purple);
             margin: 0 auto;
             z-index:99;
-            display: flex;
+            display: grid;
             justify-content: center;
+
 
         }
             .meet{
                 margin-top:126px;
                 display:flex;
-
+                flex-direction: row;
+                justify-self: center;
             }
 
+            .copy{
+                font-size: 1rem;
+display: flex;
+flex-direction: column-reverse;
+align-content: center;
+            }
 
 
 
@@ -551,3 +596,18 @@ div.panel2.show {
     opacity: 1;
     max-height: 500px; 
 }
+
+
+
+/*  */
+/* radios */
+/*  */
+
+label > input{ /* HIDE RADIO */
+    visibility: hidden;
+    position: absolute; /* Makes input not-clickable */
+ /* Remove input from document flow */
+  }
+
+
+  /* https://www.tutorialrepublic.com/codelab.php?topic=faq&file=jquery-show-hide-div-using-radio-button */
