@@ -19,6 +19,7 @@
 
     <link rel="icon" type="image/png" href="imgs/fav.png">
     <!-- js -->
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
@@ -104,7 +105,7 @@
                 <div class="dude">
                     <!-- body -->
                     <div class="body">
-                        <svg class="body" xmlns="http://www.w3.org/2000/svg" width="507" height="781" viewBox="0 0 507 781">
+                        <svg class="body" data-aos-duration="300"  data-aos="slide-left" xmlns="http://www.w3.org/2000/svg" width="507" height="781" viewBox="0 0 507 781">
                             <g fill="none" fill-rule="evenodd">
                                 <path fill="#FFC4C4" d="M78.3058732,518.952103 C61.2479871,525.748165 42.9287983,580.282394 42.9287983,595.736444 L36.1103291,603.955244 C36.6412262,609.471712 37.2842591,612.876705 38.039428,614.170224 C38.7945969,615.463743 51.9051121,621.877918 77.3709736,633.412749 C110.586819,601.67989 125.207802,577.965551 121.233924,562.269733 C115.273106,538.726007 95.3637594,512.156042 78.3058732,518.952103 Z" />
                                 <path fill="#FFC4C4" d="M94.1532398,637.351401 C109.305156,635.835422 117.908715,652.659314 118.891067,652.659314 C119.959782,652.659314 131.091913,650.934205 134.940063,649.74705 C138.788214,648.559896 140.285301,661.687774 132.833072,664.779356 C127.864919,666.840411 120.909874,666.483619 111.967937,663.70898 C114.932963,664.336964 119.936906,676.885009 126.979765,701.353115 C127.633577,739.811747 125.758666,759.041062 121.355034,759.041062 C99.4221014,759.041062 107.888444,713.815744 106.181045,703.960648 C104.473646,694.105552 84.1343079,671.647144 85.5036311,686.886851 C91.6567068,755.366718 74.9114497,783.742444 70.4552456,780.116988 C65.9990415,776.491531 68.5720601,682.993789 61.5823407,682.993789 C56.9225277,682.993789 51.689033,691.058548 45.8818565,707.188065 C53.6645893,747.362689 53.9246229,767.450001 46.6619573,767.450001 C39.3992918,767.450001 33.0174392,747.96035 27.5163998,708.981048 C28.3384043,693.44834 35.1420213,691.430242 31.7402128,686.886851 C29.4723404,683.857923 24.5280071,691.222656 16.9072127,708.981048 C22.595309,717.51108 26.9839331,740.392356 20.4126183,740.392356 C13.8413034,740.392356 2.93881851,719.953671 0.846581126,703.960648 C-0.50526562,693.627157 13.7982448,671.209806 43.7571123,636.708595 C43.703075,636.646385 43.649142,636.584272 43.5953143,636.522259 C34.0531459,625.528996 34.0531459,612.950589 43.5953143,598.787036 C57.1952023,569.130154 61.4081625,578.493422 64.5632826,592.253983 C90.2127483,601.460312 100.076067,616.492785 94.1532398,637.351401 Z" />
@@ -177,9 +178,9 @@
                 </div>
             </div>
 
-            <div class="d12" data-aos="zoom-out-down" data-aos-duration="300" data-aos-anchor-placement="bottom" data-aos-delay="600">
+            <div class="d12" >
 
-                <svg class="d12dice" xmlns="http://www.w3.org/2000/svg" width="72" height="75" viewBox="0 0 72 75">
+                <svg data-aos="zoom-out-down" data-aos-duration="300" data-aos-anchor-placement="top" data-aos-delay="600" class="d12dice" xmlns="http://www.w3.org/2000/svg" width="72" height="75" viewBox="0 0 72 75">
                     <g fill="none" fill-rule="evenodd" transform="translate(0 1)">
                         <g fill-rule="nonzero" stroke-width="1.5" transform="translate(1)">
                             <polygon fill="#FEFB8E" stroke="#FEFB8E" points="23.825 52.028 16.886 30.561 35 17.322 53.114 30.561 46.175 52.028" />
@@ -241,10 +242,13 @@
 
             <!-- contact buttons -->
             <div class="contact contact1">
+                <div class="icons">
                 <div class="phone">
+                    <div class="phone">
                     <button type="icon" class="phone icon">
                         <img src="assets/icons/Phone.svg" alt="Phone number">
                     </button>
+                    </div>
                     <a class="p">Phone</a>
                 </div>
 
@@ -270,12 +274,13 @@
                     <div class="resume">
                         <button type="icon" class="resume icon">
                             <img src="assets/icons/Resume.svg" alt="Resume">
-                        </button>
-                        <button class="contacts" onclick="location.href='/assets/Resume.pdf'"> Download Resume.pdf
-                        </button>
 
                     </div>
                     <a class="p">Resume</a>
+                    </div>
+                </button>
+                <button class="contacts" onclick="location.href='/assets/Resume.pdf'"> Download Resume.pdf
+                </button>
                 </div>
             </div>
         </ul>
@@ -290,16 +295,24 @@
             <div class="workContainer">
                 <ul>
 
-                    <li> <button class="accordion" id="Accordion1" class="init">
-                            <H4>Nielsen</H4>
-                    </li> </button>
-                    <li> <button class="accordion" id="Accordion2">
-                            <H4>Dave Ramsey</H4>
-                    </li> </button>
-                    <li> <button class="accordion" id="Accordion3">
-                            <h4>Bundl</h4>
-                    </li> </button>
-                </ul>
+                        <div class="accordion" id="Accordion1">
+                                <h4>Nielsen</h4> </div>
+                                <div class="panel">Content Here</div>
+                        
+                             
+                              
+                            <div class="accordion" id="Accordion2">
+                                <h4>Dave Ramsey</h4>       </div>
+                                <div class="panel">Content Here</div>
+                            
+                       
+                              
+                            <div class="accordion" id="Accordion3">
+                                <h4>Bundl</h4>  </div>
+                                <div class="panel">Content Here</div>
+                            
+                            
+                                              </ul>
             </div>
 
             <!-- Work Case Study Images -->
@@ -351,12 +364,19 @@
             <div class="sideContainer">
                 <ul>
 
-                    <li><button class="accordion" id="Accordion4">
-                            <H4 class="init">GetPower.info</H4>
-                        </button></li>
-                    <li><button class="accordion" id="Accordion5">
-                            <H4>Speak Easierly</H4>
-                        </button></li>
+                        <div class="accordion2" id="Accordion4">
+                                <h4>GetPower.Info</h4> </div>
+                                <div class="panel2">Content Here</div>
+                        
+                             
+                              
+                            <div class="accordion2" id="Accordion5">
+                                <h4>Speak Easierly</h4>       </div>
+                                <div class="panel2">Content Here</div>
+                            
+                       
+
+                    
                 </ul>
             </div>
 
@@ -492,73 +512,33 @@
     </ul>
     <!--end grid-->
 
-    <!-- accordion script -->
-    <!-- close other accordions -->
-
-    <!-- <script>
-    var acc = document.getElementsByClassName("accordion");
-    var i;
-    
-    for (i = 0; i < acc.length; i++) {
-        acc[i].addEventListener("click", function() {
-            this.classList.toggle("active");
-            var panel = this.nextElementSibling;
-            if (panel.style.display === "block") {
-                panel.style.display = "none";
-            } else {
-                panel.style.display = "block";
-            }
-        });
-    }
-</script> -->
-
-    <script>
-        var defaultPanel = parseInt(getParam('panel'));
-        var accordions = $("#Accordion1,#Accordion2,#Accordion3,#Accordion4,#Accordion5").accordion({
-            collapsible: true,
-            active: defaultPanel,
-            beforeActivate: function (event, ui) {
-                accordions.not(this).accordion('option', 'active', false);
-            }
-        });
-
-        $('ul a').click(function () {
-            var accordion = $($(this).attr('href'));
-            accordions.not(accordion).accordion('option', 'active', false);
-            accordion.accordion('option', 'active', 0);
-        });
 
 
-        function getParam(name) {
 
-            var query = location.search.substring(1);
-
-            if (query.length) {
-
-                var parts = query.split('&');
-
-                for (var i = 0; i < parts.length; i++) {
-
-                    var pos = parts[i].indexOf('=');
-
-                    if (parts[i].substring(0, pos) == name) {
-
-                        return parts[i].substring(pos + 1);
-
-                    }
-
-                }
-
-            } return false;
-
-        }
-    </script>
 
     <!-- animation -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
+<script src="/js/anime.min.js"></script>
+<script src="js/acc1.js"></script>
+
+
+
+<!-- line -->
+<script>var lineDrawing = anime({
+        targets: '.lines path',
+        strokeDashoffset: [anime.setDashoffset, 0],
+        easing: 'easeInOutSine',
+        duration: 1700,
+        delay: 800,
+        direction: 'alternate',
+        loop: false
+      });
+</script>
+
+<!-- body -->
 
 </body>
 

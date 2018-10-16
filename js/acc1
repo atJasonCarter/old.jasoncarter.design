@@ -1,0 +1,39 @@
+var defaultPanel = parseInt(getParam('panel'));
+var accordions = $( "#Accordion1,#Accordion2,#Accordion3,#Accordion4" ).accordion({
+    collapsible: true,
+    active: defaultPanel,
+    beforeActivate: function(event, ui) {
+        accordions.not(this).accordion('option', 'active', false);
+    }
+});
+
+$('ul a').click(function() {
+    var accordion = $($(this).attr('href'));
+    accordions.not(accordion).accordion('option', 'active', false);
+    accordion.accordion('option', 'active', 0);
+});
+
+
+  function getParam(name) {
+
+    var query = location.search.substring(1);
+
+    if (query.length) {
+
+        var parts = query.split('&');
+
+        for (var i = 0; i < parts.length; i++) {
+
+            var pos = parts[i].indexOf('=');
+
+            if (parts[i].substring(0,pos) == name) {
+
+                return parts[i].substring(pos+1);
+
+            }
+
+        }
+
+    } return false;
+
+}

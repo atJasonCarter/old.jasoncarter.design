@@ -145,9 +145,30 @@
 
 
 /* contact */
-.contact {
+.icons{
+    display: flex;
+    justify-content: space-between;
+    width: 40vw;
+
+
 }
+.p{
+    display:flex;
+    justify-content: space-between;
+    padding-top:12px;
+}
+.icon{
+    background: none;
+    border:none;
+
+
+}
+
 .contact1 {
+    z-index: 99999;
+    position: absolute;
+    top:1000px;
+    right: 7%;
 }
 
 
@@ -171,7 +192,7 @@
   background-color: var(--yellow);
   z-index: inherit;
 }
-.workContainer > ul > li {
+.workContainer > div {
   display: block;
   position: relative;
   max-height: 77px;
@@ -249,7 +270,7 @@
     background-color: var(--pink);
     z-index: inherit;
   }
-  .sideContainer > ul > li {
+  .sideContainer > div {
     display: block;
     position: relative;
     max-height: 77px;
@@ -471,7 +492,62 @@ b {
     background-color: #ffffff00;
 }
 
-.active, .accordion:hover { 
-    font-weight: 700;
+ .accordion:hover { 
+
     color: var(--blue);
+}
+
+
+div.panel {
+    padding: 0 18px;
+    background-color: var(--yellow);
+    overflow: hidden;
+    max-height: 0;
+    transition: 0.4s ease-in-out;
+    opacity: 0;
+    margin-bottom:10px;
+    -webkit-transition: 0.4s ease-in-out;
+    -moz-transition: 0.4s ease-in-out;
+    -ms-transition: 0.4s ease-in-out;
+    -o-transition: 0.4s ease-in-out;
+}
+div.panel.show {
+    opacity: 1;
+    max-height: 500px; 
+}
+.accordion2 {
+    color:var(--purple);
+    width:100%;
+    cursor: pointer;
+    border: none;
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+    background-color: #ffffff00;
+}
+
+ .accordion2:hover { 
+
+    color: var(--blue);
+}
+
+
+div.panel2 {
+    padding: 0 18px;
+    background-color: var(--pink);
+    overflow: hidden;
+    max-height: 0;
+    transition: 0.4s ease-in-out;
+    opacity: 0;
+    margin-bottom:10px;
+    -webkit-transition: 0.4s ease-in-out;
+    -moz-transition: 0.4s ease-in-out;
+    -ms-transition: 0.4s ease-in-out;
+    -o-transition: 0.4s ease-in-out;
+}
+div.panel2.show {
+    opacity: 1;
+    max-height: 500px; 
 }

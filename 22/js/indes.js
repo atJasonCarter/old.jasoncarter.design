@@ -56,7 +56,7 @@
 
 
 var lineDrawing = anime({
-  targets: '.line1 path',
+  targets: '.line path',
   strokeDashoffset: [anime.setDashoffset, 0],
   easing: 'easeInOutSine',
   duration: 3500,
