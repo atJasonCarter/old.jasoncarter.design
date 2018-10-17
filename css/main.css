@@ -200,6 +200,10 @@ button.contact2:hover{
     cursor: pointer;
 }
 
+.C2C{
+text-transform: uppercase;
+}
+
 span.contactSpan{
     font-family: "IBM Plex Sans", sans-serif;
 font-weight: 300;
@@ -332,21 +336,21 @@ font-size: 36px;
         /* chocolates 2 */
         #hand2 {
             position: absolute;
-            top: 2917px;
+            top: 2817px;
             z-index: 15;
-            right: 37%;
+            right: 32%;
           }
           #wire {
             position: absolute;
-            top: 2888px;
-            right: 36%;
+            top: 2788px;
+            right: 34%;
             z-index: 13;
           }
           #keyboard {
             position: absolute;
-            top: 2900px;
+            top: 2800px;
             z-index: 14;
-            right: 34%;
+            right: 29%;
           }
 
     /* values */
